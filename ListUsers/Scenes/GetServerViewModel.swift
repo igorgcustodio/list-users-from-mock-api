@@ -8,7 +8,7 @@
 import UIKit
 
 protocol GetServerViewModelProtocol: AnyObject {
-
+    func getUserList(for url: String?)
 }
 
 final class GetServerViewModel {
@@ -16,33 +16,29 @@ final class GetServerViewModel {
     // MARK: - Properties
 
     private let coordinator: CoordinatorCommonDelegate
+    private let worker: GetServerWorkerProtocol
 
     // MARK: - Init
 
-    init(coordinator: CoordinatorCommonDelegate) {
+    init(worker: GetServerWorkerProtocol = GetServerWorker(), coordinator: CoordinatorCommonDelegate) {
+        self.worker = worker
         self.coordinator = coordinator
     }
 }
 
 extension GetServerViewModel: GetServerViewModelProtocol {
-
+    func getUserList(for url: String?) {
+        if let url {
+            worker.getUsers(for: url) { [weak self] result in
+                print(result)
+            }
+        }
+    }
 }
 
-enum Path: EndpointType {
-    case getUsers
-
-    var path: String {
-        "https://6185073a23a2fe0017fff312.mockapi.io/api/v1/user"
-    }
-    var method: HTTPMethod {
-        .get
-    }
-    var body: HTTPBody? { nil }
-}
-
-import Foundation
 
 // MARK: - UserElement
+
 struct User: Decodable {
     let createdAt: String?
     let name: String?
