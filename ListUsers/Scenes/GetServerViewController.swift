@@ -27,6 +27,7 @@ final class GetServerViewController: LoadableViewController<GetServerView> {
         super.viewWillAppear(animated)
 
         setupNavigation()
+        makeRequest()
     }
 
     func setupNavigation() {

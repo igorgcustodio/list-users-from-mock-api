@@ -20,6 +20,11 @@
 		95FC7B0E29ACFC08005A45CC /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FC7B0D29ACFC08005A45CC /* UIViewController+Extensions.swift */; };
 		95FC7B1029AD1ADA005A45CC /* GetServerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FC7B0F29AD1ADA005A45CC /* GetServerView.swift */; };
 		95FC7B1229AD1AF7005A45CC /* GetServerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FC7B1129AD1AF7005A45CC /* GetServerViewModel.swift */; };
+		95FC7B1429AD496A005A45CC /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FC7B1329AD496A005A45CC /* NetworkRouter.swift */; };
+		95FC7B1729AE11A0005A45CC /* EndpointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FC7B1629AE11A0005A45CC /* EndpointType.swift */; };
+		95FC7B1929AE11C6005A45CC /* ErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FC7B1829AE11C6005A45CC /* ErrorType.swift */; };
+		95FC7B1B29AE1241005A45CC /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FC7B1A29AE1241005A45CC /* HTTPMethod.swift */; };
+		95FC7B1D29AE12EB005A45CC /* HTTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FC7B1C29AE12EB005A45CC /* HTTPResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +62,11 @@
 		95FC7B0D29ACFC08005A45CC /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		95FC7B0F29AD1ADA005A45CC /* GetServerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetServerView.swift; sourceTree = "<group>"; };
 		95FC7B1129AD1AF7005A45CC /* GetServerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetServerViewModel.swift; sourceTree = "<group>"; };
+		95FC7B1329AD496A005A45CC /* NetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		95FC7B1629AE11A0005A45CC /* EndpointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointType.swift; sourceTree = "<group>"; };
+		95FC7B1829AE11C6005A45CC /* ErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorType.swift; sourceTree = "<group>"; };
+		95FC7B1A29AE1241005A45CC /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		95FC7B1C29AE12EB005A45CC /* HTTPResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +148,7 @@
 		95FC7AFC29A93625005A45CC /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				95FC7B1529AE1189005A45CC /* Networking */,
 				95FC7AFD29A93636005A45CC /* Coordinator.swift */,
 				95FC7B0729ACE340005A45CC /* LoadableViewController.swift */,
 			);
@@ -169,6 +180,18 @@
 				95FC7B0D29ACFC08005A45CC /* UIViewController+Extensions.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		95FC7B1529AE1189005A45CC /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				95FC7B1329AD496A005A45CC /* NetworkRouter.swift */,
+				95FC7B1C29AE12EB005A45CC /* HTTPResponse.swift */,
+				95FC7B1629AE11A0005A45CC /* EndpointType.swift */,
+				95FC7B1829AE11C6005A45CC /* ErrorType.swift */,
+				95FC7B1A29AE1241005A45CC /* HTTPMethod.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,13 +325,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				95FC7ACC29A93290005A45CC /* AppDelegate.swift in Sources */,
+				95FC7B1929AE11C6005A45CC /* ErrorType.swift in Sources */,
+				95FC7B1B29AE1241005A45CC /* HTTPMethod.swift in Sources */,
+				95FC7B1429AD496A005A45CC /* NetworkRouter.swift in Sources */,
 				95FC7ACE29A93290005A45CC /* SceneDelegate.swift in Sources */,
 				95FC7B0329ACDBF6005A45CC /* MainCoordinator.swift in Sources */,
 				95FC7B1029AD1ADA005A45CC /* GetServerView.swift in Sources */,
 				95FC7B0629ACDF21005A45CC /* GetServerViewController.swift in Sources */,
 				95FC7B0E29ACFC08005A45CC /* UIViewController+Extensions.swift in Sources */,
 				95FC7B0C29ACFBEB005A45CC /* Int+Extensions.swift in Sources */,
+				95FC7B1729AE11A0005A45CC /* EndpointType.swift in Sources */,
 				95FC7B0829ACE340005A45CC /* LoadableViewController.swift in Sources */,
+				95FC7B1D29AE12EB005A45CC /* HTTPResponse.swift in Sources */,
 				95FC7B1229AD1AF7005A45CC /* GetServerViewModel.swift in Sources */,
 				95FC7AFE29A93636005A45CC /* Coordinator.swift in Sources */,
 			);
