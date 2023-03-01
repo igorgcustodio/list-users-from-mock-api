@@ -6,18 +6,20 @@
 //
 
 import Foundation
+import Alamofire
 
 protocol GetServerWorkerProtocol: AnyObject {
-    func getUsers(for path: String, completion: @escaping (Result<[UserDataModel], ErrorType>) -> Void)
+    func getUsers(for path: String, completion: @escaping (Result<[UserDataModel], AFError>) -> Void)
 }
 
 final class GetServerWorker: GetServerWorkerProtocol {
-    func getUsers(for path: String, completion: @escaping (Result<[UserDataModel], ErrorType>) -> Void) {
-        NetworkRouter(session: .shared).performRequest(for: UserEndpoint.getUsers(customPath: path), decodingType: [UserDataModel].self) { result in
-            DispatchQueue.main.async {
-                completion(result)
+    func getUsers(for path: String, completion: @escaping (Result<[UserDataModel], AFError>) -> Void) {
+        UserNetworkingManager().getUserList(
+            path: UserEndpoint.getUsers(customPath: path).path) { result in
+                DispatchQueue.main.async {
+                    completion(result)
+                }
             }
-        }
     }
 }
 
@@ -33,5 +35,8 @@ enum UserEndpoint: EndpointType {
     var method: HTTPMethod {
         .get
     }
-    var body: HTTPBody? { nil }
+
+    var headers: HTTPHeaders? { nil }
+
+    var body: Parameters? { nil }
 }

@@ -6,11 +6,13 @@
 //
 
 import Foundation
+import Alamofire
 
 public protocol EndpointType {
     var path: String { get }
     var method: HTTPMethod { get }
-    var body: HTTPBody? { get }
+    var headers: HTTPHeaders? { get }
+    var body: Parameters? { get }
     var timeout: TimeInterval { get }
     var url: URL? { get }
 }
