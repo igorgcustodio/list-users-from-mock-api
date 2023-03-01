@@ -51,7 +51,7 @@ final class CustomTextField: UITextField {
     private func addBorder() {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = .init(hex: "#AAAAAA")
+        view.backgroundColor = .color(.gray01)
         addSubview(view)
 
         view.snp.makeConstraints { make in

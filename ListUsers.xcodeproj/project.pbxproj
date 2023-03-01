@@ -22,6 +22,12 @@
 		95E931D129AEF69800E294C4 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931D029AEF69800E294C4 /* Networking.swift */; };
 		95E931D329AEFACB00E294C4 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931D229AEFACB00E294C4 /* NetworkingManager.swift */; };
 		95E931D529AF028400E294C4 /* UserEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931D429AF028400E294C4 /* UserEndpoint.swift */; };
+		95E931D829AF88DD00E294C4 /* BaseNetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931D729AF88DD00E294C4 /* BaseNetworkingManager.swift */; };
+		95E931DB29AFCB5200E294C4 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931DA29AFCB5200E294C4 /* Toast.swift */; };
+		95E931DD29AFCE6800E294C4 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931DC29AFCE6800E294C4 /* ToastView.swift */; };
+		95E931DF29AFCE8E00E294C4 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931DE29AFCE8E00E294C4 /* Colors.swift */; };
+		95E931E129AFD19D00E294C4 /* ColorLuminosity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931E029AFD19D00E294C4 /* ColorLuminosity.swift */; };
+		95E931E529AFD9B600E294C4 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931E429AFD9B600E294C4 /* AppSettings.swift */; };
 		95FC7ACC29A93290005A45CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FC7ACB29A93290005A45CC /* AppDelegate.swift */; };
 		95FC7ACE29A93290005A45CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FC7ACD29A93290005A45CC /* SceneDelegate.swift */; };
 		95FC7AD529A93294005A45CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95FC7AD429A93294005A45CC /* Assets.xcassets */; };
@@ -86,6 +92,12 @@
 		95E931D029AEF69800E294C4 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		95E931D229AEFACB00E294C4 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 		95E931D429AF028400E294C4 /* UserEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEndpoint.swift; sourceTree = "<group>"; };
+		95E931D729AF88DD00E294C4 /* BaseNetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetworkingManager.swift; sourceTree = "<group>"; };
+		95E931DA29AFCB5200E294C4 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		95E931DC29AFCE6800E294C4 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		95E931DE29AFCE8E00E294C4 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		95E931E029AFD19D00E294C4 /* ColorLuminosity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorLuminosity.swift; sourceTree = "<group>"; };
+		95E931E429AFD9B600E294C4 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		95FC7AC829A93290005A45CC /* ListUsers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListUsers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95FC7ACB29A93290005A45CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95FC7ACD29A93290005A45CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,7 +123,7 @@
 		95FC7B2929AE3F24005A45CC /* TextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField+.swift"; sourceTree = "<group>"; };
 		95FC7B2B29AE473D005A45CC /* UIStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStyle.swift; sourceTree = "<group>"; };
 		95FC7B2D29AE47DF005A45CC /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
-		95FC7B2F29AE9E84005A45CC /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIButton+.swift"; path = "ListUsers/Utils/UIButton+.swift"; sourceTree = "<group>"; };
+		95FC7B2F29AE9E84005A45CC /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
 		E57CF635DC26CDF539B8CFCD /* Pods-ListUsersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListUsersTests.release.xcconfig"; path = "Target Support Files/Pods-ListUsersTests/Pods-ListUsersTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -192,10 +204,18 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		95E931D929AFCB2B00E294C4 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				95E931DA29AFCB5200E294C4 /* Toast.swift */,
+				95E931DC29AFCE6800E294C4 /* ToastView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		95FC7ABF29A93290005A45CC = {
 			isa = PBXGroup;
 			children = (
-				95FC7B2F29AE9E84005A45CC /* UIButton+.swift */,
 				95FC7ACA29A93290005A45CC /* ListUsers */,
 				95FC7AE129A93295005A45CC /* ListUsersTests */,
 				95FC7AC929A93290005A45CC /* Products */,
@@ -217,6 +237,7 @@
 		95FC7ACA29A93290005A45CC /* ListUsers */ = {
 			isa = PBXGroup;
 			children = (
+				95E931D929AFCB2B00E294C4 /* Components */,
 				95E931B429AEAE4600E294C4 /* Networking */,
 				95FC7B0A29ACFBEB005A45CC /* Utils */,
 				95FC7B0429ACDEDF005A45CC /* Scenes */,
@@ -243,6 +264,7 @@
 				95FC7AD429A93294005A45CC /* Assets.xcassets */,
 				95FC7AD629A93294005A45CC /* LaunchScreen.storyboard */,
 				95FC7AD929A93294005A45CC /* Info.plist */,
+				95E931E429AFD9B600E294C4 /* AppSettings.swift */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -277,6 +299,7 @@
 		95FC7B0A29ACFBEB005A45CC /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				95FC7B2F29AE9E84005A45CC /* UIButton+.swift */,
 				95E931CE29AEEF0800E294C4 /* UIImageView+.swift */,
 				95FC7B0B29ACFBEB005A45CC /* Int+.swift */,
 				95FC7B0D29ACFC08005A45CC /* UIViewController+.swift */,
@@ -284,6 +307,7 @@
 				95FC7B2929AE3F24005A45CC /* TextField+.swift */,
 				95FC7B2D29AE47DF005A45CC /* UIColor+.swift */,
 				95E931CB29AEE37200E294C4 /* UITableView+.swift */,
+				95E931E029AFD19D00E294C4 /* ColorLuminosity.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -291,6 +315,7 @@
 		95FC7B1529AE1189005A45CC /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				95E931D729AF88DD00E294C4 /* BaseNetworkingManager.swift */,
 				95FC7B1629AE11A0005A45CC /* EndpointType.swift */,
 				95FC7B1829AE11C6005A45CC /* ErrorType.swift */,
 				95E931D029AEF69800E294C4 /* Networking.swift */,
@@ -308,6 +333,7 @@
 				95E931C229AEE16B00E294C4 /* TableViewData.swift */,
 				95E931C429AEE1BB00E294C4 /* EquatableAssociateValue.swift */,
 				95E931C929AEE34700E294C4 /* ReusableIdentifier.swift */,
+				95E931DE29AFCE8E00E294C4 /* Colors.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -527,10 +553,12 @@
 				95E931C529AEE1BB00E294C4 /* EquatableAssociateValue.swift in Sources */,
 				95FC7ACC29A93290005A45CC /* AppDelegate.swift in Sources */,
 				95E931D129AEF69800E294C4 /* Networking.swift in Sources */,
+				95E931D829AF88DD00E294C4 /* BaseNetworkingManager.swift in Sources */,
 				95E931CF29AEEF0800E294C4 /* UIImageView+.swift in Sources */,
 				95FC7B1929AE11C6005A45CC /* ErrorType.swift in Sources */,
 				95E931CA29AEE34700E294C4 /* ReusableIdentifier.swift in Sources */,
 				95E931C029AEE10E00E294C4 /* UsersListingView.swift in Sources */,
+				95E931DD29AFCE6800E294C4 /* ToastView.swift in Sources */,
 				95E931C829AEE2BE00E294C4 /* UsersListingTableViewCellView.swift in Sources */,
 				95E931CC29AEE37200E294C4 /* UITableView+.swift in Sources */,
 				95FC7B2A29AE3F24005A45CC /* TextField+.swift in Sources */,
@@ -549,10 +577,14 @@
 				95FC7B0829ACE340005A45CC /* LoadableViewController.swift in Sources */,
 				95FC7B2C29AE473D005A45CC /* UIStyle.swift in Sources */,
 				95FC7B1229AD1AF7005A45CC /* GetServerViewModel.swift in Sources */,
+				95E931E129AFD19D00E294C4 /* ColorLuminosity.swift in Sources */,
+				95E931DF29AFCE8E00E294C4 /* Colors.swift in Sources */,
 				95FC7AFE29A93636005A45CC /* Coordinator.swift in Sources */,
 				95E931D329AEFACB00E294C4 /* NetworkingManager.swift in Sources */,
+				95E931DB29AFCB5200E294C4 /* Toast.swift in Sources */,
 				95FC7B2E29AE47DF005A45CC /* UIColor+.swift in Sources */,
 				95E931BF29AEE10E00E294C4 /* UsersListingTableViewData.swift in Sources */,
+				95E931E529AFD9B600E294C4 /* AppSettings.swift in Sources */,
 				95E931D529AF028400E294C4 /* UserEndpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

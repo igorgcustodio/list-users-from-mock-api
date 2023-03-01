@@ -21,7 +21,7 @@ final class UsersListingTableViewCell: UITableViewCell, ReusableIdentifier {
 
     // MARK: - UI Properties
 
-    private lazy var nameLabel: UILabel = .buildLabel(style: .title, color: .init(hex: "#191919"))
+    private lazy var nameLabel: UILabel = .buildLabel(style: .title, color: .color(.black))
     private lazy var avatar: UIImageView = .buildImageView()
 
     // MARK: - Class Properties

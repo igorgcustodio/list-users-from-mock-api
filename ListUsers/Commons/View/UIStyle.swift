@@ -15,9 +15,9 @@ public enum UIStyle {
     public var mainColor: UIColor {
         switch self {
         case .light:
-            return .init(hex: "#F6F7F8")
+            return .color(.white)
         case .dark:
-            return .init(hex: "#121212")
+            return .color(.black)
         case let .custom(color):
             return color
         }
@@ -26,9 +26,9 @@ public enum UIStyle {
     public var secondaryColor: UIColor {
         switch self {
         case .light:
-            return .init(hex: "#121212")
+            return .color(.black)
         case .dark:
-            return .init(hex: "#F6F7F8")
+            return .color(.white)
         case let .custom(color):
             return color.isDarkColor ? .white : .black
         }

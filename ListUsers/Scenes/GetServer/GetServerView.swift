@@ -10,7 +10,7 @@ import SnapKit
 
 final class GetServerView: UIView {
 
-    private lazy var titleLabel: UILabel = .buildLabel(style: .title, color: .init(hex: "#121212"), numberOfLines: .zero, text: "Enter the server address")
+    private lazy var titleLabel: UILabel = .buildLabel(style: .title, color: .color(.black), numberOfLines: .zero, text: "Enter the server address")
     private(set) lazy var textField: UITextField = .buildTextField(placeholder: "e.g. https://google.com")
     private(set) lazy var button: UIButton = .buildButton(with: "Next")
 
@@ -52,6 +52,6 @@ extension GetServerView: ViewCodeConfiguration {
     }
 
     func configureViews() {
-        backgroundColor = .init(hex: "#f6f7f8")
+        backgroundColor = .color(.white)
     }
 }

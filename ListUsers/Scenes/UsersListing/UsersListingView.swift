@@ -38,7 +38,7 @@ extension UsersListingView: ViewCodeConfiguration {
     }
 
     func configureViews() {
-        tableView.backgroundColor = .init(hex: "#f6f7f8")
+        tableView.backgroundColor = .color(.white)
     }
 }
 
