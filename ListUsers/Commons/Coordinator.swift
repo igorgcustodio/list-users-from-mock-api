@@ -27,11 +27,11 @@ extension Coordinator {
         if let navigationController = viewController as? UINavigationController,
            navigationController.viewControllers.count > .zero,
            navigationController.presentedViewController == nil {
-            UIApplication.shared.windows.filter { $0.isKeyWindow }.first?.rootViewController?.presentedViewController?.present(navigationController, animated: true, completion: completion)
+            UIApplication.shared.keyWindow?.rootViewController?.presentedViewController?.present(navigationController, animated: true, completion: completion)
         } else if navigationController.viewControllers.isEmpty {
             navigationController.setViewControllers([viewController], animated: true)
             navigationController.modalPresentationStyle = .fullScreen
-            UIApplication.shared.windows.filter { $0.isKeyWindow }.first?.rootViewController?.presentedViewController?.present(navigationController, animated: true, completion: completion)
+            UIApplication.shared.keyWindow?.rootViewController?.presentedViewController?.present(navigationController, animated: true, completion: completion)
         } else {
             navigationController.pushViewController(viewController, animated: true)
         }

@@ -59,6 +59,7 @@ final class Networking: NetworkingProtocol {
                 case let .success(data):
                     completion(.success(data))
                 case let .failure(error):
+                    Toast.show(with: .init(text: error.localizedDescription), automaticDismiss: true)
                     completion(.failure(error))
                 }
             }

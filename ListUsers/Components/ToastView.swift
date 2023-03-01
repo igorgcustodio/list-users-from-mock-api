@@ -17,7 +17,7 @@ final class ToastView: UIView {
 
     // MARK: - Views
 
-    private lazy var descriptionLabel: UILabel = .buildLabel(style: .description, color: .color(.white), text: content.text)
+    private lazy var descriptionLabel: UILabel = .buildLabel(style: .description, color: .color(.white), numberOfLines: .zero, text: content.text)
     private lazy var container: UIView = buildContainer()
 
     // MARK: - Properties
@@ -48,12 +48,11 @@ extension ToastView: ViewCodeConfiguration {
 
     func setupConstraints() {
         container.snp.makeConstraints { make in
-            make.horizontalEdges.equalToSuperview()
-            make.top.equalToSuperview()
+            make.edges.equalToSuperview()
         }
 
         descriptionLabel.snp.makeConstraints { make in
-            make.edges.equalToSuperview().offset(16)
+            make.edges.equalToSuperview().inset(16)
         }
     }
 }
