@@ -17,12 +17,12 @@ final class Toast {
     private static var timer: Timer?
 
     private static var frame: CGRect {
-        let topPadding = UIApplication.shared.keyWindow?.safeAreaInsets.top ?? 0
+        let topPadding = UIApplication.shared.keyWindow?.safeAreaInsets.top ?? .zero
         return CGRect(
-            x: 8,
-            y: 8 + topPadding,
-            width: UIScreen.main.bounds.width - 16,
-            height: 80
+            x: Layout.Margin.margin8,
+            y: Layout.Margin.margin8 + topPadding,
+            width: UIScreen.main.bounds.width - Layout.Margin.margin16,
+            height: Layout.Height.height80
         )
     }
 
@@ -30,6 +30,11 @@ final class Toast {
 
     public init() {}
 
+    /// Display a toast at the top of the screen
+    ///
+    /// - Parameters:
+    ///   - content: Content of ToastView
+    ///   - automaticDismiss: controls if the toast is dismissed automatically or needs an user action
     public static func show(
         with content: ToastView.Content,
         automaticDismiss: Bool = true
@@ -52,13 +57,20 @@ final class Toast {
         }
     }
 
-    private static func setupToastInteraction() {
-        let swipeUp = UISwipeGestureRecognizer(target: self, action: #selector(didSwipe))
-        swipeUp.direction = .up
-        toast?.addGestureRecognizer(swipeUp)
-        toast?.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTouch)))
+    /// Dismiss the toast
+    public static func dismissToast() {
+        guard let toast = toast else { return }
+        UIView.animate(withDuration: Timing.Interval.time05, animations: {
+            toast.transform = CGAffineTransform(translationX: .zero, y: -toast.frame.maxY)
+        }, completion: { _ in
+            finish()
+        })
     }
+}
 
+// MARK: - Interaction handler
+
+extension Toast {
     @objc private static func didSwipe() {
         dismissToast()
         finish()
@@ -68,28 +80,30 @@ final class Toast {
         dismissToast()
         finish()
     }
+}
+
+// MARK: - Showing helpers
+
+extension Toast {
+    private static func setupToastInteraction() {
+        let swipeUp = UISwipeGestureRecognizer(target: self, action: #selector(didSwipe))
+        swipeUp.direction = .up
+        toast?.addGestureRecognizer(swipeUp)
+        toast?.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTouch)))
+    }
 
     private static func presentToast() {
         guard let toast = toast else { return }
 
-        toast.transform = CGAffineTransform(translationX: 0, y: -toast.frame.maxY)
-        UIView.animate(withDuration: 0.5, animations: {
+        toast.transform = CGAffineTransform(translationX: .zero, y: -toast.frame.maxY)
+        UIView.animate(withDuration: Timing.Interval.time05, animations: {
             toast.transform = .identity
         }, completion: { _ in
             if automaticDismiss {
-                timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { _ in
+                timer = Timer.scheduledTimer(withTimeInterval: Timing.Interval.time05, repeats: false) { _ in
                     dismissToast()
                 }
             }
-        })
-    }
-
-    public static func dismissToast() {
-        guard let toast = toast else { return }
-        UIView.animate(withDuration: 0.5, animations: {
-            toast.transform = CGAffineTransform(translationX: 0, y: -toast.frame.maxY)
-        }, completion: { _ in
-            finish()
         })
     }
 
