@@ -42,5 +42,7 @@ extension UIColor {
         return lum
     }
 
-
+    public var contrastColor: UIColor {
+        isDarkColor ? .color(.white) : .color(.black)
+    }
 }
