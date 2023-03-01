@@ -8,6 +8,7 @@ target 'ListUsers' do
   use_frameworks!
 
   pod 'SnapKit', '~> 5.6.0'
+  pod 'AlamofireImage', '~> 4.1'
 
   target 'ListUsersTests' do
     inherit! :search_paths

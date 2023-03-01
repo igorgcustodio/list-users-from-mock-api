@@ -44,7 +44,7 @@ extension UILabel {
         return label
     }
 
-    public static func buildLabel(
+    public static func buildLabell(
         style: TextStyle,
         color: UIColor,
         numberOfLines: Int = .one,

@@ -30,3 +30,11 @@ extension MainCoordinator {
 
 extension MainCoordinator: CoordinatorCommonDelegate {
 }
+
+extension MainCoordinator: GetServerViewModelCoordinatorDelegate {
+    func openUsersList(users: [UserDataModel]) {
+        let viewModel = UsersListingViewModel(usersList: users)
+        let viewController = UsersListingViewController(viewModel: viewModel)
+        handlePresentation(with: viewController)
+    }
+}

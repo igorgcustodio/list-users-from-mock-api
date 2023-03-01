@@ -25,12 +25,11 @@ final class GetServerViewController: LoadableViewController<GetServerView> {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        setupUI()
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        setupUI()
     }
 }
 

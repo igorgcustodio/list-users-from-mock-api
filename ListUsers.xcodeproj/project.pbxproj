@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		95E931B229AEAC0C00E294C4 /* GetServerWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931B129AEAC0C00E294C4 /* GetServerWorker.swift */; };
+		95E931B629AEAE5300E294C4 /* UserDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931B529AEAE5300E294C4 /* UserDataModel.swift */; };
+		95E931BE29AEE10E00E294C4 /* UsersListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931B929AEE10E00E294C4 /* UsersListingViewController.swift */; };
+		95E931BF29AEE10E00E294C4 /* UsersListingTableViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931BA29AEE10E00E294C4 /* UsersListingTableViewData.swift */; };
+		95E931C029AEE10E00E294C4 /* UsersListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931BB29AEE10E00E294C4 /* UsersListingView.swift */; };
+		95E931C129AEE10E00E294C4 /* UsersListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931BC29AEE10E00E294C4 /* UsersListingViewModel.swift */; };
+		95E931C329AEE16B00E294C4 /* TableViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931C229AEE16B00E294C4 /* TableViewData.swift */; };
+		95E931C529AEE1BB00E294C4 /* EquatableAssociateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931C429AEE1BB00E294C4 /* EquatableAssociateValue.swift */; };
+		95E931C829AEE2BE00E294C4 /* UsersListingTableViewCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931C729AEE2BE00E294C4 /* UsersListingTableViewCellView.swift */; };
+		95E931CA29AEE34700E294C4 /* ReusableIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931C929AEE34700E294C4 /* ReusableIdentifier.swift */; };
+		95E931CC29AEE37200E294C4 /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931CB29AEE37200E294C4 /* UITableView+.swift */; };
+		95E931CF29AEEF0800E294C4 /* UIImageView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931CE29AEEF0800E294C4 /* UIImageView+.swift */; };
 		95FC7ACC29A93290005A45CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FC7ACB29A93290005A45CC /* AppDelegate.swift */; };
 		95FC7ACE29A93290005A45CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FC7ACD29A93290005A45CC /* SceneDelegate.swift */; };
 		95FC7AD529A93294005A45CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95FC7AD429A93294005A45CC /* Assets.xcassets */; };
@@ -61,6 +72,17 @@
 		7C260A5ECD657D51404DCCD2 /* Pods-ListUsers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListUsers.release.xcconfig"; path = "Target Support Files/Pods-ListUsers/Pods-ListUsers.release.xcconfig"; sourceTree = "<group>"; };
 		9001784725AE12455D877F84 /* Pods_ListUsers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ListUsers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95E931B129AEAC0C00E294C4 /* GetServerWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetServerWorker.swift; sourceTree = "<group>"; };
+		95E931B529AEAE5300E294C4 /* UserDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataModel.swift; sourceTree = "<group>"; };
+		95E931B929AEE10E00E294C4 /* UsersListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListingViewController.swift; sourceTree = "<group>"; };
+		95E931BA29AEE10E00E294C4 /* UsersListingTableViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListingTableViewData.swift; sourceTree = "<group>"; };
+		95E931BB29AEE10E00E294C4 /* UsersListingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListingView.swift; sourceTree = "<group>"; };
+		95E931BC29AEE10E00E294C4 /* UsersListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListingViewModel.swift; sourceTree = "<group>"; };
+		95E931C229AEE16B00E294C4 /* TableViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewData.swift; sourceTree = "<group>"; };
+		95E931C429AEE1BB00E294C4 /* EquatableAssociateValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EquatableAssociateValue.swift; path = ListUsers/Commons/EquatableAssociateValue.swift; sourceTree = SOURCE_ROOT; };
+		95E931C729AEE2BE00E294C4 /* UsersListingTableViewCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListingTableViewCellView.swift; sourceTree = "<group>"; };
+		95E931C929AEE34700E294C4 /* ReusableIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableIdentifier.swift; sourceTree = "<group>"; };
+		95E931CB29AEE37200E294C4 /* UITableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
+		95E931CE29AEEF0800E294C4 /* UIImageView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+.swift"; sourceTree = "<group>"; };
 		95FC7AC829A93290005A45CC /* ListUsers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListUsers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95FC7ACB29A93290005A45CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95FC7ACD29A93290005A45CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +151,45 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		95E931B329AEAE3B00E294C4 /* GetServer */ = {
+			isa = PBXGroup;
+			children = (
+				95FC7B0529ACDF21005A45CC /* GetServerViewController.swift */,
+				95FC7B0F29AD1ADA005A45CC /* GetServerView.swift */,
+				95FC7B1129AD1AF7005A45CC /* GetServerViewModel.swift */,
+				95E931B129AEAC0C00E294C4 /* GetServerWorker.swift */,
+			);
+			path = GetServer;
+			sourceTree = "<group>";
+		};
+		95E931B429AEAE4600E294C4 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				95E931B529AEAE5300E294C4 /* UserDataModel.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		95E931B729AEE0F300E294C4 /* UsersListing */ = {
+			isa = PBXGroup;
+			children = (
+				95E931C629AEE2A100E294C4 /* Cell */,
+				95E931B929AEE10E00E294C4 /* UsersListingViewController.swift */,
+				95E931BA29AEE10E00E294C4 /* UsersListingTableViewData.swift */,
+				95E931BB29AEE10E00E294C4 /* UsersListingView.swift */,
+				95E931BC29AEE10E00E294C4 /* UsersListingViewModel.swift */,
+			);
+			path = UsersListing;
+			sourceTree = "<group>";
+		};
+		95E931C629AEE2A100E294C4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				95E931C729AEE2BE00E294C4 /* UsersListingTableViewCellView.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		95FC7ABF29A93290005A45CC = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +215,7 @@
 		95FC7ACA29A93290005A45CC /* ListUsers */ = {
 			isa = PBXGroup;
 			children = (
+				95E931B429AEAE4600E294C4 /* Networking */,
 				95FC7B0A29ACFBEB005A45CC /* Utils */,
 				95FC7B0429ACDEDF005A45CC /* Scenes */,
 				95FC7B0129ACDBCD005A45CC /* Main */,
@@ -204,10 +266,8 @@
 		95FC7B0429ACDEDF005A45CC /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				95FC7B0529ACDF21005A45CC /* GetServerViewController.swift */,
-				95FC7B0F29AD1ADA005A45CC /* GetServerView.swift */,
-				95FC7B1129AD1AF7005A45CC /* GetServerViewModel.swift */,
-				95E931B129AEAC0C00E294C4 /* GetServerWorker.swift */,
+				95E931B729AEE0F300E294C4 /* UsersListing */,
+				95E931B329AEAE3B00E294C4 /* GetServer */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -215,11 +275,13 @@
 		95FC7B0A29ACFBEB005A45CC /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				95E931CE29AEEF0800E294C4 /* UIImageView+.swift */,
 				95FC7B0B29ACFBEB005A45CC /* Int+.swift */,
 				95FC7B0D29ACFC08005A45CC /* UIViewController+.swift */,
 				95FC7B2729AE3643005A45CC /* UILabel+.swift */,
 				95FC7B2929AE3F24005A45CC /* TextField+.swift */,
 				95FC7B2D29AE47DF005A45CC /* UIColor+.swift */,
+				95E931CB29AEE37200E294C4 /* UITableView+.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -243,6 +305,9 @@
 				95FC7B2129AE32DE005A45CC /* UIHelper.swift */,
 				95FC7B2329AE32F4005A45CC /* ViewCodeConfiguration.swift */,
 				95FC7B2B29AE473D005A45CC /* UIStyle.swift */,
+				95E931C229AEE16B00E294C4 /* TableViewData.swift */,
+				95E931C429AEE1BB00E294C4 /* EquatableAssociateValue.swift */,
+				95E931C929AEE34700E294C4 /* ReusableIdentifier.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -455,10 +520,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95E931B629AEAE5300E294C4 /* UserDataModel.swift in Sources */,
+				95E931C129AEE10E00E294C4 /* UsersListingViewModel.swift in Sources */,
 				95FC7B2829AE3643005A45CC /* UILabel+.swift in Sources */,
+				95E931C329AEE16B00E294C4 /* TableViewData.swift in Sources */,
+				95E931C529AEE1BB00E294C4 /* EquatableAssociateValue.swift in Sources */,
 				95FC7ACC29A93290005A45CC /* AppDelegate.swift in Sources */,
+				95E931CF29AEEF0800E294C4 /* UIImageView+.swift in Sources */,
 				95FC7B1929AE11C6005A45CC /* ErrorType.swift in Sources */,
+				95E931CA29AEE34700E294C4 /* ReusableIdentifier.swift in Sources */,
+				95E931C029AEE10E00E294C4 /* UsersListingView.swift in Sources */,
+				95E931C829AEE2BE00E294C4 /* UsersListingTableViewCellView.swift in Sources */,
 				95FC7B1B29AE1241005A45CC /* HTTPMethod.swift in Sources */,
+				95E931CC29AEE37200E294C4 /* UITableView+.swift in Sources */,
 				95FC7B2A29AE3F24005A45CC /* TextField+.swift in Sources */,
 				95E931B229AEAC0C00E294C4 /* GetServerWorker.swift in Sources */,
 				95FC7B1429AD496A005A45CC /* NetworkRouter.swift in Sources */,
@@ -466,6 +540,7 @@
 				95FC7B3029AE9E84005A45CC /* UIButton+.swift in Sources */,
 				95FC7B0329ACDBF6005A45CC /* MainCoordinator.swift in Sources */,
 				95FC7B1029AD1ADA005A45CC /* GetServerView.swift in Sources */,
+				95E931BE29AEE10E00E294C4 /* UsersListingViewController.swift in Sources */,
 				95FC7B2229AE32DE005A45CC /* UIHelper.swift in Sources */,
 				95FC7B2429AE32F4005A45CC /* ViewCodeConfiguration.swift in Sources */,
 				95FC7B0629ACDF21005A45CC /* GetServerViewController.swift in Sources */,
@@ -478,6 +553,7 @@
 				95FC7B1229AD1AF7005A45CC /* GetServerViewModel.swift in Sources */,
 				95FC7AFE29A93636005A45CC /* Coordinator.swift in Sources */,
 				95FC7B2E29AE47DF005A45CC /* UIColor+.swift in Sources */,
+				95E931BF29AEE10E00E294C4 /* UsersListingTableViewData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
