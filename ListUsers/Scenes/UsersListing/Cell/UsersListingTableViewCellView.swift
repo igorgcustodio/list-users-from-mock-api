@@ -74,7 +74,8 @@ extension UsersListingTableViewCell: ViewCodeConfiguration {
 
         avatar.snp.makeConstraints { make in
             make.left.equalToSuperview().offset(24)
-            make.verticalEdges.equalToSuperview().offset(16)
+            make.top.equalToSuperview().offset(16)
+            make.bottom.equalToSuperview().offset(-16)
             make.size.equalTo(CGSize(width: 96, height: 96))
         }
     }
@@ -84,6 +85,6 @@ extension UsersListingTableViewCell: ViewCodeConfiguration {
         backgroundColor = .clear
         avatar.layer.cornerRadius = 48
         avatar.clipsToBounds = true
-        avatar.image = .init(systemName: "person.fill")
+        avatar.image = .init(systemName: "person.circle.fill")
     }
 }
