@@ -14,7 +14,7 @@ protocol GetServerWorkerProtocol: AnyObject {
 
 final class GetServerWorker: GetServerWorkerProtocol {
     func getUsers(for path: String, completion: @escaping (Result<[UserDataModel], AFError>) -> Void) {
-        UserNetworkingManager().getUserList(
+        UsersNetworkingManager().getUserList(
             path: path
         ) { result in
                 DispatchQueue.main.async {

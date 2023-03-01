@@ -8,7 +8,7 @@
 import Foundation
 import Alamofire
 
-final class UserNetworkingManager: BaseNetworkingManager<UserEndpoint> {
+final class UsersNetworkingManager: BaseNetworkingManager<UserEndpoint> {
     func getUserList(path: String, completion: @escaping (Result<[UserDataModel], AFError>) -> Void) {
         request(endpoint: .getUsers(customPath: path), completion: completion)
     }
