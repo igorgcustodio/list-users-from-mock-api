@@ -23,20 +23,3 @@ final class GetServerWorker: GetServerWorkerProtocol {
     }
 }
 
-enum UserEndpoint: EndpointType {
-    case getUsers(customPath: String)
-
-    var path: String {
-        switch self {
-        case let .getUsers(customPath):
-            return "\(customPath)/api/v1/user"
-        }
-    }
-    var method: HTTPMethod {
-        .get
-    }
-
-    var headers: HTTPHeaders? { nil }
-
-    var body: Parameters? { nil }
-}

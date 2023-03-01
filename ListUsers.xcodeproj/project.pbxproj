@@ -21,6 +21,7 @@
 		95E931CF29AEEF0800E294C4 /* UIImageView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931CE29AEEF0800E294C4 /* UIImageView+.swift */; };
 		95E931D129AEF69800E294C4 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931D029AEF69800E294C4 /* Networking.swift */; };
 		95E931D329AEFACB00E294C4 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931D229AEFACB00E294C4 /* NetworkingManager.swift */; };
+		95E931D529AF028400E294C4 /* UserEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931D429AF028400E294C4 /* UserEndpoint.swift */; };
 		95FC7ACC29A93290005A45CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FC7ACB29A93290005A45CC /* AppDelegate.swift */; };
 		95FC7ACE29A93290005A45CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FC7ACD29A93290005A45CC /* SceneDelegate.swift */; };
 		95FC7AD529A93294005A45CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95FC7AD429A93294005A45CC /* Assets.xcassets */; };
@@ -84,6 +85,7 @@
 		95E931CE29AEEF0800E294C4 /* UIImageView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+.swift"; sourceTree = "<group>"; };
 		95E931D029AEF69800E294C4 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		95E931D229AEFACB00E294C4 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		95E931D429AF028400E294C4 /* UserEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEndpoint.swift; sourceTree = "<group>"; };
 		95FC7AC829A93290005A45CC /* ListUsers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListUsers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95FC7ACB29A93290005A45CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95FC7ACD29A93290005A45CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 			children = (
 				95E931B529AEAE5300E294C4 /* UserDataModel.swift */,
 				95E931D229AEFACB00E294C4 /* NetworkingManager.swift */,
+				95E931D429AF028400E294C4 /* UserEndpoint.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -550,6 +553,7 @@
 				95E931D329AEFACB00E294C4 /* NetworkingManager.swift in Sources */,
 				95FC7B2E29AE47DF005A45CC /* UIColor+.swift in Sources */,
 				95E931BF29AEE10E00E294C4 /* UsersListingTableViewData.swift in Sources */,
+				95E931D529AF028400E294C4 /* UserEndpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
