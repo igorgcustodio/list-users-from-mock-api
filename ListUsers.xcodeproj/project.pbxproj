@@ -14,7 +14,6 @@
 		95E931C029AEE10E00E294C4 /* UsersListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931BB29AEE10E00E294C4 /* UsersListingView.swift */; };
 		95E931C129AEE10E00E294C4 /* UsersListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931BC29AEE10E00E294C4 /* UsersListingViewModel.swift */; };
 		95E931C329AEE16B00E294C4 /* TableViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931C229AEE16B00E294C4 /* TableViewData.swift */; };
-		95E931C529AEE1BB00E294C4 /* EquatableAssociateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931C429AEE1BB00E294C4 /* EquatableAssociateValue.swift */; };
 		95E931C829AEE2BE00E294C4 /* UsersListingTableViewCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931C729AEE2BE00E294C4 /* UsersListingTableViewCellView.swift */; };
 		95E931CA29AEE34700E294C4 /* ReusableIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931C929AEE34700E294C4 /* ReusableIdentifier.swift */; };
 		95E931CC29AEE37200E294C4 /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931CB29AEE37200E294C4 /* UITableView+.swift */; };
@@ -25,12 +24,14 @@
 		95E931D829AF88DD00E294C4 /* BaseNetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931D729AF88DD00E294C4 /* BaseNetworkingManager.swift */; };
 		95E931DB29AFCB5200E294C4 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931DA29AFCB5200E294C4 /* Toast.swift */; };
 		95E931DD29AFCE6800E294C4 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931DC29AFCE6800E294C4 /* ToastView.swift */; };
-		95E931DF29AFCE8E00E294C4 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931DE29AFCE8E00E294C4 /* Colors.swift */; };
+		95E931DF29AFCE8E00E294C4 /* Colors+DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931DE29AFCE8E00E294C4 /* Colors+DesignSystem.swift */; };
 		95E931E129AFD19D00E294C4 /* ColorLuminosity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931E029AFD19D00E294C4 /* ColorLuminosity.swift */; };
 		95E931E529AFD9B600E294C4 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931E429AFD9B600E294C4 /* AppSettings.swift */; };
 		95E931E729AFF88F00E294C4 /* UIApplication+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931E629AFF88F00E294C4 /* UIApplication+.swift */; };
 		95E931E929B0008400E294C4 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931E829B0008300E294C4 /* Layout.swift */; };
 		95E931EB29B0021700E294C4 /* Timing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931EA29B0021700E294C4 /* Timing.swift */; };
+		95E931EE29B0040D00E294C4 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931ED29B0040D00E294C4 /* Theme.swift */; };
+		95E931F129B004AA00E294C4 /* EquatableAssociateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931F029B004AA00E294C4 /* EquatableAssociateValue.swift */; };
 		95FC7ACC29A93290005A45CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FC7ACB29A93290005A45CC /* AppDelegate.swift */; };
 		95FC7ACE29A93290005A45CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FC7ACD29A93290005A45CC /* SceneDelegate.swift */; };
 		95FC7AD529A93294005A45CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95FC7AD429A93294005A45CC /* Assets.xcassets */; };
@@ -87,7 +88,6 @@
 		95E931BB29AEE10E00E294C4 /* UsersListingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListingView.swift; sourceTree = "<group>"; };
 		95E931BC29AEE10E00E294C4 /* UsersListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListingViewModel.swift; sourceTree = "<group>"; };
 		95E931C229AEE16B00E294C4 /* TableViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewData.swift; sourceTree = "<group>"; };
-		95E931C429AEE1BB00E294C4 /* EquatableAssociateValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EquatableAssociateValue.swift; path = ListUsers/Commons/EquatableAssociateValue.swift; sourceTree = SOURCE_ROOT; };
 		95E931C729AEE2BE00E294C4 /* UsersListingTableViewCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListingTableViewCellView.swift; sourceTree = "<group>"; };
 		95E931C929AEE34700E294C4 /* ReusableIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableIdentifier.swift; sourceTree = "<group>"; };
 		95E931CB29AEE37200E294C4 /* UITableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
@@ -98,12 +98,14 @@
 		95E931D729AF88DD00E294C4 /* BaseNetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetworkingManager.swift; sourceTree = "<group>"; };
 		95E931DA29AFCB5200E294C4 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		95E931DC29AFCE6800E294C4 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
-		95E931DE29AFCE8E00E294C4 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		95E931DE29AFCE8E00E294C4 /* Colors+DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors+DesignSystem.swift"; sourceTree = "<group>"; };
 		95E931E029AFD19D00E294C4 /* ColorLuminosity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorLuminosity.swift; sourceTree = "<group>"; };
 		95E931E429AFD9B600E294C4 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		95E931E629AFF88F00E294C4 /* UIApplication+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+.swift"; sourceTree = "<group>"; };
 		95E931E829B0008300E294C4 /* Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
 		95E931EA29B0021700E294C4 /* Timing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timing.swift; sourceTree = "<group>"; };
+		95E931ED29B0040D00E294C4 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		95E931F029B004AA00E294C4 /* EquatableAssociateValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquatableAssociateValue.swift; sourceTree = "<group>"; };
 		95FC7AC829A93290005A45CC /* ListUsers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListUsers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95FC7ACB29A93290005A45CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95FC7ACD29A93290005A45CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -213,10 +215,42 @@
 		95E931D929AFCB2B00E294C4 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				95E931EC29B003C900E294C4 /* Toast */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		95E931EC29B003C900E294C4 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
 				95E931DA29AFCB5200E294C4 /* Toast.swift */,
 				95E931DC29AFCE6800E294C4 /* ToastView.swift */,
 			);
-			path = Components;
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		95E931EF29B0046200E294C4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				95E931F029B004AA00E294C4 /* EquatableAssociateValue.swift */,
+				95FC7B0729ACE340005A45CC /* LoadableViewController.swift */,
+				95FC7B2329AE32F4005A45CC /* ViewCodeConfiguration.swift */,
+				95E931C229AEE16B00E294C4 /* TableViewData.swift */,
+				95FC7B2129AE32DE005A45CC /* UIHelper.swift */,
+				95E931C929AEE34700E294C4 /* ReusableIdentifier.swift */,
+				95FC7AFD29A93636005A45CC /* Coordinator.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		95E931F229B004B800E294C4 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				95E931E829B0008300E294C4 /* Layout.swift */,
+				95E931EA29B0021700E294C4 /* Timing.swift */,
+				95E931DE29AFCE8E00E294C4 /* Colors+DesignSystem.swift */,
+			);
+			path = DesignSystem;
 			sourceTree = "<group>";
 		};
 		95FC7ABF29A93290005A45CC = {
@@ -278,9 +312,10 @@
 		95FC7AFC29A93625005A45CC /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				95E931F229B004B800E294C4 /* DesignSystem */,
+				95E931EF29B0046200E294C4 /* Utils */,
 				95FC7B2029AE32C7005A45CC /* View */,
 				95FC7B1529AE1189005A45CC /* Networking */,
-				95FC7AFD29A93636005A45CC /* Coordinator.swift */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -333,16 +368,8 @@
 		95FC7B2029AE32C7005A45CC /* View */ = {
 			isa = PBXGroup;
 			children = (
-				95FC7B0729ACE340005A45CC /* LoadableViewController.swift */,
-				95FC7B2129AE32DE005A45CC /* UIHelper.swift */,
-				95FC7B2329AE32F4005A45CC /* ViewCodeConfiguration.swift */,
 				95FC7B2B29AE473D005A45CC /* UIStyle.swift */,
-				95E931C229AEE16B00E294C4 /* TableViewData.swift */,
-				95E931C429AEE1BB00E294C4 /* EquatableAssociateValue.swift */,
-				95E931C929AEE34700E294C4 /* ReusableIdentifier.swift */,
-				95E931DE29AFCE8E00E294C4 /* Colors.swift */,
-				95E931E829B0008300E294C4 /* Layout.swift */,
-				95E931EA29B0021700E294C4 /* Timing.swift */,
+				95E931ED29B0040D00E294C4 /* Theme.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -559,7 +586,6 @@
 				95E931C129AEE10E00E294C4 /* UsersListingViewModel.swift in Sources */,
 				95FC7B2829AE3643005A45CC /* UILabel+.swift in Sources */,
 				95E931C329AEE16B00E294C4 /* TableViewData.swift in Sources */,
-				95E931C529AEE1BB00E294C4 /* EquatableAssociateValue.swift in Sources */,
 				95FC7ACC29A93290005A45CC /* AppDelegate.swift in Sources */,
 				95E931D129AEF69800E294C4 /* Networking.swift in Sources */,
 				95E931D829AF88DD00E294C4 /* BaseNetworkingManager.swift in Sources */,
@@ -567,6 +593,7 @@
 				95FC7B1929AE11C6005A45CC /* ErrorType.swift in Sources */,
 				95E931CA29AEE34700E294C4 /* ReusableIdentifier.swift in Sources */,
 				95E931C029AEE10E00E294C4 /* UsersListingView.swift in Sources */,
+				95E931F129B004AA00E294C4 /* EquatableAssociateValue.swift in Sources */,
 				95E931DD29AFCE6800E294C4 /* ToastView.swift in Sources */,
 				95E931C829AEE2BE00E294C4 /* UsersListingTableViewCellView.swift in Sources */,
 				95E931CC29AEE37200E294C4 /* UITableView+.swift in Sources */,
@@ -589,9 +616,10 @@
 				95FC7B2C29AE473D005A45CC /* UIStyle.swift in Sources */,
 				95FC7B1229AD1AF7005A45CC /* GetServerViewModel.swift in Sources */,
 				95E931E129AFD19D00E294C4 /* ColorLuminosity.swift in Sources */,
-				95E931DF29AFCE8E00E294C4 /* Colors.swift in Sources */,
+				95E931DF29AFCE8E00E294C4 /* Colors+DesignSystem.swift in Sources */,
 				95FC7AFE29A93636005A45CC /* Coordinator.swift in Sources */,
 				95E931E929B0008400E294C4 /* Layout.swift in Sources */,
+				95E931EE29B0040D00E294C4 /* Theme.swift in Sources */,
 				95E931D329AEFACB00E294C4 /* NetworkingManager.swift in Sources */,
 				95E931DB29AFCB5200E294C4 /* Toast.swift in Sources */,
 				95FC7B2E29AE47DF005A45CC /* UIColor+.swift in Sources */,
