@@ -8,15 +8,6 @@
 import Foundation
 import Alamofire
 
-
-struct NetworkingManagerConfig {
-    let baseUrl: String
-
-    init(baseUrl: String = AppSettings.baseUrl) {
-        self.baseUrl = baseUrl
-    }
-}
-
 open class BaseNetworkingManager<T: EndpointType> {
 
     private let networking: NetworkingProtocol
@@ -60,7 +51,6 @@ open class BaseNetworkingManager<T: EndpointType> {
         endpoint: T,
         completion: @escaping (Result<D, AFError>) -> Void
     ) {
-
         networking.request(
             path: endpoint.path,
             method: endpoint.method,
