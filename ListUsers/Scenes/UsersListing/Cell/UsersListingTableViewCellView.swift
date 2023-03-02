@@ -67,23 +67,23 @@ extension UsersListingTableViewCell: ViewCodeConfiguration {
 
     func setupConstraints() {
         nameLabel.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(16)
-            make.left.equalTo(avatar.snp.right).offset(16)
-            make.right.equalToSuperview().offset(-16)
+            make.top.equalToSuperview().offset(Layout.Margin.margin16)
+            make.left.equalTo(avatar.snp.right).offset(Layout.Margin.margin16)
+            make.right.equalToSuperview().offset(-Layout.Margin.margin16)
         }
 
         avatar.snp.makeConstraints { make in
-            make.left.equalToSuperview().offset(24)
-            make.top.equalToSuperview().offset(16)
-            make.bottom.equalToSuperview().offset(-16)
-            make.size.equalTo(CGSize(width: 96, height: 96))
+            make.left.equalToSuperview().offset(Layout.Margin.margin24)
+            make.top.equalToSuperview().offset(Layout.Margin.margin16)
+            make.bottom.equalToSuperview().offset(-Layout.Margin.margin16)
+            make.size.equalTo(CGSize(square: Layout.Height.height80))
         }
     }
 
     func configureViews() {
         selectionStyle = .none
         backgroundColor = .clear
-        avatar.layer.cornerRadius = 48
+        avatar.layer.cornerRadius = avatar.frame.height.half
         avatar.clipsToBounds = true
         avatar.image = .init(systemName: "person.circle.fill")
     }

@@ -40,6 +40,8 @@
 		95E9320029B0C1AA00E294C4 /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931FF29B0C1AA00E294C4 /* TextStyle.swift */; };
 		95E9320229B0C33500E294C4 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E9320129B0C33500E294C4 /* String+.swift */; };
 		95E9320429B0C38900E294C4 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E9320329B0C38900E294C4 /* Operators.swift */; };
+		95E9320629B0C48D00E294C4 /* CGSize+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E9320529B0C48D00E294C4 /* CGSize+.swift */; };
+		95E9320829B0C52000E294C4 /* CGFloat+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E9320729B0C52000E294C4 /* CGFloat+.swift */; };
 		95FC7ACC29A93290005A45CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FC7ACB29A93290005A45CC /* AppDelegate.swift */; };
 		95FC7ACE29A93290005A45CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FC7ACD29A93290005A45CC /* SceneDelegate.swift */; };
 		95FC7AD529A93294005A45CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95FC7AD429A93294005A45CC /* Assets.xcassets */; };
@@ -122,6 +124,8 @@
 		95E931FF29B0C1AA00E294C4 /* TextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyle.swift; sourceTree = "<group>"; };
 		95E9320129B0C33500E294C4 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		95E9320329B0C38900E294C4 /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		95E9320529B0C48D00E294C4 /* CGSize+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+.swift"; sourceTree = "<group>"; };
+		95E9320729B0C52000E294C4 /* CGFloat+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+.swift"; sourceTree = "<group>"; };
 		95FC7AC829A93290005A45CC /* ListUsers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListUsers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95FC7ACB29A93290005A45CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95FC7ACD29A93290005A45CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -288,6 +292,8 @@
 				95E931E629AFF88F00E294C4 /* UIApplication+.swift */,
 				95E931FB29B0BDE100E294C4 /* UIEdgeInsets+.swift */,
 				95E9320129B0C33500E294C4 /* String+.swift */,
+				95E9320529B0C48D00E294C4 /* CGSize+.swift */,
+				95E9320729B0C52000E294C4 /* CGFloat+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -618,7 +624,9 @@
 				95E931C129AEE10E00E294C4 /* UsersListingViewModel.swift in Sources */,
 				95E931FC29B0BDE100E294C4 /* UIEdgeInsets+.swift in Sources */,
 				95FC7B2829AE3643005A45CC /* UILabel+.swift in Sources */,
+				95E9320829B0C52000E294C4 /* CGFloat+.swift in Sources */,
 				95E931C329AEE16B00E294C4 /* TableViewData.swift in Sources */,
+				95E9320629B0C48D00E294C4 /* CGSize+.swift in Sources */,
 				95FC7ACC29A93290005A45CC /* AppDelegate.swift in Sources */,
 				95E931D129AEF69800E294C4 /* Networking.swift in Sources */,
 				95E931D829AF88DD00E294C4 /* BaseNetworkingManager.swift in Sources */,
