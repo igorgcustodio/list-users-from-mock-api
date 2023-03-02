@@ -10,10 +10,11 @@ import SnapKit
 
 extension UITextField {
     public static func buildTextField(
-        placeholder: String? = nil
+        placeholder: String? = nil,
+        keyboardType: UIKeyboardType = .default
     ) -> UITextField {
         let textField: CustomTextField = .init(
-            keyboardType: .URL,
+            keyboardType: keyboardType,
             placeholder: placeholder
         )
 

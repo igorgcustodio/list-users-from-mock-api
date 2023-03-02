@@ -31,7 +31,7 @@ open class BaseNetworkingManager<T: EndpointType> {
         method: HTTPMethod,
         headers: HTTPHeaders?,
         parameters: Parameters?,
-        completion: @escaping (Result<D, AFError>) -> Void
+        completion: @escaping (Result<D, NetworkingErrorType>) -> Void
     ) {
         networking.request(
             path: path,
@@ -49,7 +49,7 @@ open class BaseNetworkingManager<T: EndpointType> {
     ///   - completion: escaping closure to handle the response
     func request<D: Decodable>(
         endpoint: T,
-        completion: @escaping (Result<D, AFError>) -> Void
+        completion: @escaping (Result<D, NetworkingErrorType>) -> Void
     ) {
         networking.request(
             path: endpoint.path,

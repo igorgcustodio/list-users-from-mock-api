@@ -9,11 +9,11 @@ import Foundation
 import Alamofire
 
 protocol GetServerWorkerProtocol: AnyObject {
-    func getUsers(for path: String, completion: @escaping (Result<[UserDataModel], AFError>) -> Void)
+    func getUsers(for path: String, completion: @escaping (Result<[UserDataModel], NetworkingErrorType>) -> Void)
 }
 
 final class GetServerWorker: GetServerWorkerProtocol {
-    func getUsers(for path: String, completion: @escaping (Result<[UserDataModel], AFError>) -> Void) {
+    func getUsers(for path: String, completion: @escaping (Result<[UserDataModel], NetworkingErrorType>) -> Void) {
         UsersNetworkingManager().getUserList(
             path: path
         ) { result in

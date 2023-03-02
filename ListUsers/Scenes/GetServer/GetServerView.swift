@@ -11,7 +11,7 @@ import SnapKit
 final class GetServerView: UIView {
 
     private lazy var titleLabel: UILabel = .buildLabel(style: .title, color: .color(.black), numberOfLines: .zero, text: "Enter the server address")
-    private(set) lazy var textField: UITextField = .buildTextField(placeholder: "e.g. https://google.com")
+    private(set) lazy var textField: UITextField = .buildTextField(placeholder: "e.g. https://google.com", keyboardType: .URL)
     private(set) lazy var button: UIButton = .buildButton(with: "Next", style: .primary)
 
     init() {

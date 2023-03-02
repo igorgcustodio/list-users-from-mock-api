@@ -12,5 +12,5 @@ public enum DefaultState {
     case normal
     case loading
     case success
-    case failure(error: AFError)
+    case failure(error: ErrorType)
 }

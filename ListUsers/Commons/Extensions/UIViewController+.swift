@@ -38,7 +38,7 @@ extension UIViewController {
         navigationController?.stopLoader()
     }
 
-    public func handleFailureState(with error: AFError) {
+    public func handleFailureState(with error: ErrorType) {
         navigationController?.stopLoader()
         Toast.show(with: .init(text: error.localizedDescription))
     }

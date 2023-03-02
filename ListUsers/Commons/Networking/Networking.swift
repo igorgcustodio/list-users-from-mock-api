@@ -8,31 +8,46 @@
 import Foundation
 import Alamofire
 
-protocol NetworkingProtocol: AnyObject {
+public enum NetworkingErrorType: Error {
+
+    case generic
+    case invalidURL
+
+    public var localizedDescription: String {
+        switch self {
+        case .generic:
+            return "Error on request"
+        case .invalidURL:
+            return "Invalid URL"
+        }
+    }
+}
+
+public protocol NetworkingProtocol: AnyObject {
     func request<T: Decodable>(
         path: String,
         method: HTTPMethod,
         headers: HTTPHeaders?,
         parameters: Parameters?,
-        completion: @escaping (Result<T, AFError>
-        ) -> Void)
+        completion: @escaping (Result<T, NetworkingErrorType>) -> Void
+    )
 }
 
-final class Networking: NetworkingProtocol {
+public final class Networking: NetworkingProtocol {
 
     private let decoderQueue: DispatchQueue
 
-    init(decoderQueue: DispatchQueue = .global(qos: .utility)) {
+    public init(decoderQueue: DispatchQueue = .global(qos: .utility)) {
         self.decoderQueue = decoderQueue
     }
 
-    func request<T: Decodable>(
+    public func request<T: Decodable>(
         path: String,
         method: HTTPMethod = .get,
         headers: HTTPHeaders? = nil,
         parameters: Parameters? = nil,
-        completion: @escaping (Result<T, AFError>
-        ) -> Void) {
+        completion: @escaping (Result<T, NetworkingErrorType>) -> Void
+    ) {
         var allHeaders: HTTPHeaders = [
             "Accept": "application/json"
         ]
@@ -59,9 +74,18 @@ final class Networking: NetworkingProtocol {
                 case let .success(data):
                     completion(.success(data))
                 case let .failure(error):
-                    completion(.failure(error))
+                    completion(.failure(self.handleError(error)))
                 }
             }
+    }
+
+    private func handleError(_ error: AFError) -> NetworkingErrorType {
+        switch error {
+        case .invalidURL:
+            return .invalidURL
+        default:
+            return .generic
+        }
     }
 
     private func logRequest(_ request: URLRequest) {
