@@ -17,7 +17,7 @@ final class ToastView: UIView {
 
     // MARK: - Views
 
-    private lazy var descriptionLabel: UILabel = .buildLabel(style: .description, color: .color(.white), numberOfLines: .zero, text: content.text)
+    private lazy var descriptionLabel: UILabel = .buildLabel(style: .label, color: .color(.white), numberOfLines: .zero, text: content.text)
     private lazy var container: UIView = buildContainer()
 
     // MARK: - Properties

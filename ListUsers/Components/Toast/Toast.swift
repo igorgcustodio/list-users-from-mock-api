@@ -100,7 +100,7 @@ extension Toast {
             toast.transform = .identity
         }, completion: { _ in
             if automaticDismiss {
-                timer = Timer.scheduledTimer(withTimeInterval: Timing.Interval.time05, repeats: false) { _ in
+                timer = Timer.scheduledTimer(withTimeInterval: Timing.Interval.time30, repeats: false) { _ in
                     dismissToast()
                 }
             }

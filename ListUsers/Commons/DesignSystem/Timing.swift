@@ -20,5 +20,6 @@ enum Timing {
         public static let time08: TimeInterval = 0.8
         public static let time09: TimeInterval = 0.9
         public static let time10: TimeInterval = 1
+        public static let time30: TimeInterval = 3
     }
 }
