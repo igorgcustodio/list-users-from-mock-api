@@ -10,6 +10,7 @@ target 'ListUsers' do
   pod 'SnapKit', '~> 5.6.0'
   pod 'Alamofire'
   pod 'AlamofireImage', '~> 4.1'
+  pod 'IQKeyboardManagerSwift'
 
   target 'ListUsersTests' do
     inherit! :search_paths
