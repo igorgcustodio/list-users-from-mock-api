@@ -18,6 +18,7 @@ final class CustomTextField: UITextField {
     ) {
         self.insets = insets
         super.init(frame: .zero)
+        self.placeholder = placeholder
         setupView()
     }
 
@@ -36,7 +37,7 @@ final class CustomTextField: UITextField {
 
     private func setupView() {
         translatesAutoresizingMaskIntoConstraints = false
-
+        clearButtonMode = .whileEditing
         addBorder()
     }
 

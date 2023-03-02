@@ -71,12 +71,7 @@ final class Toast {
 // MARK: - Interaction handler
 
 extension Toast {
-    @objc private static func didSwipe() {
-        dismissToast()
-        finish()
-    }
-
-    @objc private static func didTouch() {
+    @objc private static func closeToast() {
         dismissToast()
         finish()
     }
@@ -86,10 +81,10 @@ extension Toast {
 
 extension Toast {
     private static func setupToastInteraction() {
-        let swipeUp = UISwipeGestureRecognizer(target: self, action: #selector(didSwipe))
+        let swipeUp = UISwipeGestureRecognizer(target: self, action: #selector(closeToast))
         swipeUp.direction = .up
         toast?.addGestureRecognizer(swipeUp)
-        toast?.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTouch)))
+        toast?.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(closeToast)))
     }
 
     private static func presentToast() {

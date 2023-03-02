@@ -65,7 +65,6 @@ extension GetServerViewController: UIHelper {
     func setupTextFields() {
         contentView.textField.delegate = self
         contentView.textField.becomeFirstResponder()
-        contentView.textField.text = "https://6185073a23a2fe0017fff312.mockapi.ioo"
     }
 }
 

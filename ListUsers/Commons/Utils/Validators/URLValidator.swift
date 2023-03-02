@@ -26,11 +26,8 @@ class URLValidator: InputValidator {
         guard let text
         else { return URLValidatorMessages.emptyField }
 
-        let regex = "http[s]?://(([^/:.[:space:]]+(.[^/:.[:space:]]+)*)|([0-9](.[0-9]{3})))(:[0-9]+)?((/[^?#[:space:]]+)([^#[:space:]]+)?(#.+)?)?"
-        let test = NSPredicate(format:"SELF MATCHES %@", regex)
-        let result = test.evaluate(with: text)
-
-        if result {
+        let urlRegEx = "^(https?://)?(www\\.)?([-a-z0-9]{1,63}\\.)*?[a-z0-9][-a-z0-9]{0,61}[a-z0-9]\\.[a-z]{2,6}(/[-\\w@\\+\\.~#\\?&/=%]*)?$"
+        if NSPredicate(format: "SELF MATCHES %@", urlRegEx).evaluate(with: text) {
             return nil
         } else {
             return URLValidatorMessages.invalidFormat
