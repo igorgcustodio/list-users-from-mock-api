@@ -24,4 +24,12 @@ extension UIViewController {
             .foregroundColor: style.secondaryColor
         ]
     }
+
+    public func showLoader() {
+        CustomLoaderViewController.shared.start()
+    }
+
+    public func stopLoader() {
+        CustomLoaderViewController.shared.stop()
+    }
 }
