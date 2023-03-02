@@ -34,6 +34,10 @@
 		95E931F129B004AA00E294C4 /* EquatableAssociateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931F029B004AA00E294C4 /* EquatableAssociateValue.swift */; };
 		95E931F429B0050D00E294C4 /* NetworkingBaseConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931F329B0050D00E294C4 /* NetworkingBaseConfig.swift */; };
 		95E931F829B0065800E294C4 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931F729B0065800E294C4 /* CustomButton.swift */; };
+		95E931FA29B0BD2600E294C4 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931F929B0BD2600E294C4 /* CustomTextField.swift */; };
+		95E931FC29B0BDE100E294C4 /* UIEdgeInsets+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931FB29B0BDE100E294C4 /* UIEdgeInsets+.swift */; };
+		95E931FE29B0BEEA00E294C4 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931FD29B0BEEA00E294C4 /* CustomLabel.swift */; };
+		95E9320029B0C1AA00E294C4 /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931FF29B0C1AA00E294C4 /* TextStyle.swift */; };
 		95FC7ACC29A93290005A45CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FC7ACB29A93290005A45CC /* AppDelegate.swift */; };
 		95FC7ACE29A93290005A45CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FC7ACD29A93290005A45CC /* SceneDelegate.swift */; };
 		95FC7AD529A93294005A45CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95FC7AD429A93294005A45CC /* Assets.xcassets */; };
@@ -110,6 +114,10 @@
 		95E931F029B004AA00E294C4 /* EquatableAssociateValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquatableAssociateValue.swift; sourceTree = "<group>"; };
 		95E931F329B0050D00E294C4 /* NetworkingBaseConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingBaseConfig.swift; sourceTree = "<group>"; };
 		95E931F729B0065800E294C4 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		95E931F929B0BD2600E294C4 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		95E931FB29B0BDE100E294C4 /* UIEdgeInsets+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+.swift"; sourceTree = "<group>"; };
+		95E931FD29B0BEEA00E294C4 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		95E931FF29B0C1AA00E294C4 /* TextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyle.swift; sourceTree = "<group>"; };
 		95FC7AC829A93290005A45CC /* ListUsers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListUsers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95FC7ACB29A93290005A45CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95FC7ACD29A93290005A45CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -221,6 +229,8 @@
 			children = (
 				95E931EC29B003C900E294C4 /* Toast */,
 				95E931F729B0065800E294C4 /* CustomButton.swift */,
+				95E931F929B0BD2600E294C4 /* CustomTextField.swift */,
+				95E931FD29B0BEEA00E294C4 /* CustomLabel.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -271,6 +281,7 @@
 				95E931CB29AEE37200E294C4 /* UITableView+.swift */,
 				95E931E029AFD19D00E294C4 /* ColorLuminosity.swift */,
 				95E931E629AFF88F00E294C4 /* UIApplication+.swift */,
+				95E931FB29B0BDE100E294C4 /* UIEdgeInsets+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -384,6 +395,7 @@
 			children = (
 				95FC7B2B29AE473D005A45CC /* UIStyle.swift */,
 				95E931ED29B0040D00E294C4 /* Theme.swift */,
+				95E931FF29B0C1AA00E294C4 /* TextStyle.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -598,6 +610,7 @@
 			files = (
 				95E931B629AEAE5300E294C4 /* UserDataModel.swift in Sources */,
 				95E931C129AEE10E00E294C4 /* UsersListingViewModel.swift in Sources */,
+				95E931FC29B0BDE100E294C4 /* UIEdgeInsets+.swift in Sources */,
 				95FC7B2829AE3643005A45CC /* UILabel+.swift in Sources */,
 				95E931C329AEE16B00E294C4 /* TableViewData.swift in Sources */,
 				95FC7ACC29A93290005A45CC /* AppDelegate.swift in Sources */,
@@ -605,6 +618,7 @@
 				95E931D829AF88DD00E294C4 /* BaseNetworkingManager.swift in Sources */,
 				95E931CF29AEEF0800E294C4 /* UIImageView+.swift in Sources */,
 				95FC7B1929AE11C6005A45CC /* ErrorType.swift in Sources */,
+				95E9320029B0C1AA00E294C4 /* TextStyle.swift in Sources */,
 				95E931CA29AEE34700E294C4 /* ReusableIdentifier.swift in Sources */,
 				95E931C029AEE10E00E294C4 /* UsersListingView.swift in Sources */,
 				95E931F129B004AA00E294C4 /* EquatableAssociateValue.swift in Sources */,
@@ -629,6 +643,7 @@
 				95FC7B1729AE11A0005A45CC /* EndpointType.swift in Sources */,
 				95FC7B0829ACE340005A45CC /* LoadableViewController.swift in Sources */,
 				95FC7B2C29AE473D005A45CC /* UIStyle.swift in Sources */,
+				95E931FA29B0BD2600E294C4 /* CustomTextField.swift in Sources */,
 				95FC7B1229AD1AF7005A45CC /* GetServerViewModel.swift in Sources */,
 				95E931E129AFD19D00E294C4 /* ColorLuminosity.swift in Sources */,
 				95E931DF29AFCE8E00E294C4 /* Colors+DesignSystem.swift in Sources */,
@@ -639,6 +654,7 @@
 				95E931F829B0065800E294C4 /* CustomButton.swift in Sources */,
 				95E931DB29AFCB5200E294C4 /* Toast.swift in Sources */,
 				95FC7B2E29AE47DF005A45CC /* UIColor+.swift in Sources */,
+				95E931FE29B0BEEA00E294C4 /* CustomLabel.swift in Sources */,
 				95E931BF29AEE10E00E294C4 /* UsersListingTableViewData.swift in Sources */,
 				95E931E529AFD9B600E294C4 /* AppSettings.swift in Sources */,
 				95E931D529AF028400E294C4 /* UserEndpoint.swift in Sources */,
