@@ -41,9 +41,9 @@ extension GetServerViewModel: GetServerViewModelProtocol {
                 guard let self else { return }
                 switch result {
                 case let .success(users):
+                    let setUsers = Set(users)
+                    self.coordinator.openUsersList(users: Array(setUsers))
                     self.state.notify(.success)
-                    // TODO: Convert to set to remove duplicates
-                    self.coordinator.openUsersList(users: users)
                 case let .failure(error):
                     self.state.notify(.failure(error: error))
                 }

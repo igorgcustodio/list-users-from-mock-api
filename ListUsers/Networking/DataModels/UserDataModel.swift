@@ -7,13 +7,17 @@
 
 import Foundation
 
-struct UserDataModel: Decodable, Comparable {
+struct UserDataModel: Decodable, Comparable, Hashable {
     static func < (lhs: UserDataModel, rhs: UserDataModel) -> Bool {
         return lhs.profile?.firstName <? rhs.profile?.firstName
     }
 
     static func == (lhs: UserDataModel, rhs: UserDataModel) -> Bool {
         return lhs.id == rhs.id
+    }
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(username)
     }
 
     let createdAt: String?

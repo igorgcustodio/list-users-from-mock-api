@@ -14,7 +14,6 @@ final class ToastView: UIView {
         let text: String
     }
 
-
     // MARK: - Views
 
     private lazy var descriptionLabel: UILabel = .buildLabel(style: .label, color: .color(.white), numberOfLines: .zero, text: content.text)
