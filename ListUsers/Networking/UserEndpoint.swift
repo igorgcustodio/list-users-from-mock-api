@@ -14,7 +14,7 @@ enum UserEndpoint: EndpointType {
     var path: String {
         switch self {
         case let .getUsers(customPath):
-            return "\(customPath)/api/v1/useer"
+            return "\(customPath)/api/v1/user"
         }
     }
     var method: HTTPMethod {

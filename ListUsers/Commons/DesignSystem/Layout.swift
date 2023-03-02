@@ -7,7 +7,7 @@
 
 import UIKit
 
-enum Layout {
+public enum Layout {
 
     public enum Margin {
         public static let margin2: CGFloat = 2.0

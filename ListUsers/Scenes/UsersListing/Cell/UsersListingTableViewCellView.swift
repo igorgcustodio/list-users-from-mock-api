@@ -21,8 +21,9 @@ final class UsersListingTableViewCell: UITableViewCell, ReusableIdentifier {
 
     // MARK: - UI Properties
 
-    private lazy var nameLabel: UILabel = .buildLabel(style: .title, color: .color(.black))
-    private lazy var avatar: UIImageView = .buildImageView()
+    private lazy var nameLabel: UILabel = .buildLabel(style: .subtitle, color: .color(.black))
+    private lazy var avatar: UIImageView = .buildImageView(contentMode: .scaleAspectFill)
+    private lazy var container: UIView = .emptyView
 
     // MARK: - Class Properties
 
@@ -52,7 +53,11 @@ final class UsersListingTableViewCell: UITableViewCell, ReusableIdentifier {
         self.viewData = viewData
         nameLabel.text = viewData.name
         if let url = URL(string: viewData.avatar) {
-            avatar.af.setImage(withURL: url)
+            avatar.af.setImage(
+                withURL: url,
+                placeholderImage: .init(systemName: "person.fill"),
+                imageTransition: .crossDissolve(Timing.Interval.time02)
+            )
         }
     }
 }
@@ -61,15 +66,24 @@ final class UsersListingTableViewCell: UITableViewCell, ReusableIdentifier {
 
 extension UsersListingTableViewCell: ViewCodeConfiguration {
     func setupViewHierarchy() {
-         contentView.addSubview(nameLabel)
-        contentView.addSubview(avatar)
+        contentView.addSubview(container)
+        container.addSubviews([
+            nameLabel,
+            avatar
+        ])
     }
 
     func setupConstraints() {
-        nameLabel.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(Layout.Margin.margin16)
-            make.left.equalTo(avatar.snp.right).offset(Layout.Margin.margin16)
+        container.snp.makeConstraints { make in
+            make.left.equalToSuperview().offset(Layout.Margin.margin16)
             make.right.equalToSuperview().offset(-Layout.Margin.margin16)
+            make.top.equalToSuperview().offset(Layout.Margin.margin8)
+            make.bottom.equalToSuperview().offset(-Layout.Margin.margin8)
+        }
+
+        nameLabel.snp.makeConstraints { make in
+            make.left.equalTo(avatar.snp.right).offset(Layout.Margin.margin24)
+            make.centerY.equalTo(avatar.snp.centerY)
         }
 
         avatar.snp.makeConstraints { make in
@@ -83,8 +97,11 @@ extension UsersListingTableViewCell: ViewCodeConfiguration {
     func configureViews() {
         selectionStyle = .none
         backgroundColor = .clear
-        avatar.layer.cornerRadius = avatar.frame.height.half
-        avatar.clipsToBounds = true
-        avatar.image = .init(systemName: "person.circle.fill")
+        avatar.backgroundColor = .color(.gray01)
+        avatar.cornerRadius(with: Layout.Height.height80.half)
+
+        container.backgroundColor = .color(.gray02).withLuminosity(0.95)
+        container.layer.cornerRadius = Layout.CornerRadius.radius8
+        container.addShadow()
     }
 }
