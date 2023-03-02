@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 extension UIViewController {
 
@@ -25,11 +26,20 @@ extension UIViewController {
         ]
     }
 
-    public func showLoader() {
-        CustomLoaderViewController.shared.start()
+    public func handleNormalState() {
+        navigationController?.stopLoader()
     }
 
-    public func stopLoader() {
-        CustomLoaderViewController.shared.stop()
+    public func handleLoadingState() {
+        navigationController?.startLoader()
+    }
+
+    public func handleSuccessState() {
+        navigationController?.stopLoader()
+    }
+
+    public func handleFailureState(with error: AFError) {
+        navigationController?.stopLoader()
+        Toast.show(with: .init(text: error.localizedDescription))
     }
 }

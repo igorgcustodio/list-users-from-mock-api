@@ -7,10 +7,11 @@
 
 import UIKit
 
-public final class CustomLoaderViewController: UIViewController {
+public final class CustomLoader: UIView {
 
-    public static let shared = CustomLoaderViewController()
-    private var presentingController: CustomLoaderViewController?
+    public static let shared = CustomLoader()
+    private var baseView: UIView?
+    private var isShowing = false
 
     var loadingActivityIndicator: UIActivityIndicatorView = {
         let indicator = UIActivityIndicatorView()
@@ -39,9 +40,6 @@ public final class CustomLoaderViewController: UIViewController {
 
         blurEffectView.alpha = 0.5
 
-        // Setting the autoresizing mask to flexible for
-        // width and height will ensure the blurEffectView
-        // is the same size as its parent view.
         blurEffectView.autoresizingMask = [
             .flexibleWidth, .flexibleHeight
         ]
@@ -49,37 +47,67 @@ public final class CustomLoaderViewController: UIViewController {
         return blurEffectView
     }()
 
-    public override func viewDidLoad() {
-        super.viewDidLoad()
 
-        view.backgroundColor = UIColor.black.withAlphaComponent(0.5)
-
-        // Add the blurEffectView with the same
-        // size as view
-        blurEffectView.frame = self.view.bounds
-        view.insertSubview(blurEffectView, at: 0)
-
-        // Add the loadingActivityIndicator in the
-        // center of view
-        loadingActivityIndicator.center = CGPoint(
-            x: view.bounds.midX,
-            y: view.bounds.midY
-        )
-        view.addSubview(loadingActivityIndicator)
+    public func start(in view: UIView) {
+        DispatchQueue.main.async {
+            guard !self.isShowing else { return }
+            self.isShowing = true
+            self.addLoaderTo(to: view)
+        }
     }
 
-    public func start() {
-        let controller = CustomLoaderViewController()
-        controller.modalPresentationStyle = .overCurrentContext
-        controller.modalTransitionStyle = .crossDissolve
-        controller.view.isUserInteractionEnabled = false
-        presentingController = controller
-        Util.topViewController()?.present(controller, animated: true)
+    private func addLoaderTo(to view: UIView) {
+        baseView = .init(
+            frame: .init(
+                x: .zero,
+                y: -Layout.Margin.margin20,
+                width: UIScreen.main.bounds.width,
+                height: UIScreen.main.bounds.height + Layout.Margin.margin20
+            )
+        )
+
+        if let baseView {
+            isUserInteractionEnabled = false
+            baseView.backgroundColor = UIColor.black.withAlphaComponent(0.5)
+
+            blurEffectView.frame = bounds
+            baseView.insertSubview(blurEffectView, at: 0)
+
+            loadingActivityIndicator.center = CGPoint(
+                x: baseView.bounds.midX,
+                y: baseView.bounds.midY
+            )
+            baseView.addSubview(loadingActivityIndicator)
+            view.addSubview(baseView)
+        }
+
     }
 
     public func stop() {
-        presentingController?.view.isUserInteractionEnabled = true
-        presentingController?.dismiss(animated: true)
-        presentingController = nil
+        DispatchQueue.main.async {
+            self.removeAnimation()
+        }
+    }
+
+    private func removeAnimation() {
+        loadingActivityIndicator.removeFromSuperview()
+        blurEffectView.removeFromSuperview()
+        baseView?.removeFromSuperview()
+        isUserInteractionEnabled = true
+        isShowing = false
+    }
+}
+
+extension UIViewController {
+    public func startLoader() {
+        DispatchQueue.main.async {
+            CustomLoader.shared.start(in: self.view)
+        }
+    }
+
+    public func stopLoader() {
+        DispatchQueue.main.async {
+            CustomLoader.shared.stop()
+        }
     }
 }

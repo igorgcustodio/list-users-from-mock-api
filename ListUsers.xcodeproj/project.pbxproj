@@ -44,6 +44,9 @@
 		95E9320829B0C52000E294C4 /* CGFloat+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E9320729B0C52000E294C4 /* CGFloat+.swift */; };
 		95E9320A29B0C5F000E294C4 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E9320929B0C5F000E294C4 /* UIView+.swift */; };
 		95E9320C29B0CDE000E294C4 /* CustomLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E9320B29B0CDE000E294C4 /* CustomLoader.swift */; };
+		95E9320F29B0D25200E294C4 /* DefaultState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E9320E29B0D25200E294C4 /* DefaultState.swift */; };
+		95E9321129B0D29800E294C4 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E9321029B0D29800E294C4 /* Observable.swift */; };
+		95E9321329B0D2B100E294C4 /* Array+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E9321229B0D2B100E294C4 /* Array+.swift */; };
 		95FC7ACC29A93290005A45CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FC7ACB29A93290005A45CC /* AppDelegate.swift */; };
 		95FC7ACE29A93290005A45CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FC7ACD29A93290005A45CC /* SceneDelegate.swift */; };
 		95FC7AD529A93294005A45CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95FC7AD429A93294005A45CC /* Assets.xcassets */; };
@@ -130,6 +133,9 @@
 		95E9320729B0C52000E294C4 /* CGFloat+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+.swift"; sourceTree = "<group>"; };
 		95E9320929B0C5F000E294C4 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		95E9320B29B0CDE000E294C4 /* CustomLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoader.swift; sourceTree = "<group>"; };
+		95E9320E29B0D25200E294C4 /* DefaultState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultState.swift; sourceTree = "<group>"; };
+		95E9321029B0D29800E294C4 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		95E9321229B0D2B100E294C4 /* Array+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+.swift"; sourceTree = "<group>"; };
 		95FC7AC829A93290005A45CC /* ListUsers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListUsers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95FC7ACB29A93290005A45CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95FC7ACD29A93290005A45CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -260,6 +266,7 @@
 		95E931EF29B0046200E294C4 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				95E9320D29B0D24000E294C4 /* Observable */,
 				95E931F029B004AA00E294C4 /* EquatableAssociateValue.swift */,
 				95FC7B0729ACE340005A45CC /* LoadableViewController.swift */,
 				95FC7B2329AE32F4005A45CC /* ViewCodeConfiguration.swift */,
@@ -300,6 +307,7 @@
 				95E9320529B0C48D00E294C4 /* CGSize+.swift */,
 				95E9320729B0C52000E294C4 /* CGFloat+.swift */,
 				95E9320929B0C5F000E294C4 /* UIView+.swift */,
+				95E9321229B0D2B100E294C4 /* Array+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -310,6 +318,15 @@
 				95E931B529AEAE5300E294C4 /* UserDataModel.swift */,
 			);
 			path = DataModels;
+			sourceTree = "<group>";
+		};
+		95E9320D29B0D24000E294C4 /* Observable */ = {
+			isa = PBXGroup;
+			children = (
+				95E9320E29B0D25200E294C4 /* DefaultState.swift */,
+				95E9321029B0D29800E294C4 /* Observable.swift */,
+			);
+			path = Observable;
 			sourceTree = "<group>";
 		};
 		95FC7ABF29A93290005A45CC = {
@@ -649,7 +666,9 @@
 				95E931C829AEE2BE00E294C4 /* UsersListingTableViewCellView.swift in Sources */,
 				95E931CC29AEE37200E294C4 /* UITableView+.swift in Sources */,
 				95FC7B2A29AE3F24005A45CC /* TextField+.swift in Sources */,
+				95E9321329B0D2B100E294C4 /* Array+.swift in Sources */,
 				95E931B229AEAC0C00E294C4 /* GetServerWorker.swift in Sources */,
+				95E9321129B0D29800E294C4 /* Observable.swift in Sources */,
 				95FC7ACE29A93290005A45CC /* SceneDelegate.swift in Sources */,
 				95FC7B3029AE9E84005A45CC /* UIButton+.swift in Sources */,
 				95E931EB29B0021700E294C4 /* Timing.swift in Sources */,
@@ -672,6 +691,7 @@
 				95E931DF29AFCE8E00E294C4 /* Colors+DesignSystem.swift in Sources */,
 				95FC7AFE29A93636005A45CC /* Coordinator.swift in Sources */,
 				95E931E929B0008400E294C4 /* Layout.swift in Sources */,
+				95E9320F29B0D25200E294C4 /* DefaultState.swift in Sources */,
 				95E931EE29B0040D00E294C4 /* Theme.swift in Sources */,
 				95E9320C29B0CDE000E294C4 /* CustomLoader.swift in Sources */,
 				95E931D329AEFACB00E294C4 /* UsersNetworkingManager.swift in Sources */,

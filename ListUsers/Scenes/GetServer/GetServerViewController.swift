@@ -25,19 +25,39 @@ final class GetServerViewController: LoadableViewController<GetServerView> {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setup()
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        setupNavigation(style: .light)
+    }
+
+    // MARK: - Methods
+
+    private func setup() {
         setupUI()
+        observeStates()
+    }
+
+    private func observeStates() {
+        viewModel.observeStates { [weak self] state in
+            guard let self else { return }
+            switch state {
+            case .normal:
+                self.handleNormalState()
+            case .loading:
+                self.handleLoadingState()
+            case .success:
+                self.stopLoader()
+            case let .failure(error):
+                self.handleFailureState(with: error)
+            }
+        }
     }
 }
 
 extension GetServerViewController: UIHelper {
-    func setupNavigationBar() {
-        setupNavigation(style: .light)
-    }
-
     func setupButtons() {
         contentView.button.addTarget(self, action: #selector(nextButtonTapped), for: .touchUpInside)
     }
@@ -45,7 +65,7 @@ extension GetServerViewController: UIHelper {
     func setupTextFields() {
         contentView.textField.delegate = self
         contentView.textField.becomeFirstResponder()
-        contentView.textField.text = "https://6185073a23a2fe0017fff312.mockapi.io"
+        contentView.textField.text = "https://6185073a23a2fe0017fff312.mockapi.ioo"
     }
 }
 
