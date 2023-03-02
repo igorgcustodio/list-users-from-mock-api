@@ -9,6 +9,7 @@ Project intended to list users from an API given by user.
 - ViewCode + UIKit
 - Observable pattern to handle communication between ViewModel and ViewController
 - DesignSystem for Colors, Margins and Sizes
+- For DI, I choosed to use Protocol on objects and in classes to remove the possible dependency between classes
 
 ## Features
 
