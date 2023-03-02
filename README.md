@@ -2,7 +2,13 @@
 
 Project intended to list users from an API given by user.
 
-This project is developed with MVVM-C architecture.
+## Description
+
+- MVVM-C (Coordinator) architecture
+- Create a class to handle requests through Alamofire
+- ViewCode + UIKit
+- Observable pattern to handle communication between ViewModel and ViewController
+- DesignSystem for Colors, Margins and Sizes
 
 ## Features
 
@@ -20,6 +26,7 @@ This project is developed with MVVM-C architecture.
 - Custom implementation of Alamofire to reduce dependency
 - Simple validator
 - Colors and margins constants
+- Some extensions to help developing process
 
 ## Third-party libraries used
 
