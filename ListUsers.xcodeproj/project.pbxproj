@@ -38,6 +38,8 @@
 		95E931FC29B0BDE100E294C4 /* UIEdgeInsets+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931FB29B0BDE100E294C4 /* UIEdgeInsets+.swift */; };
 		95E931FE29B0BEEA00E294C4 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931FD29B0BEEA00E294C4 /* CustomLabel.swift */; };
 		95E9320029B0C1AA00E294C4 /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E931FF29B0C1AA00E294C4 /* TextStyle.swift */; };
+		95E9320229B0C33500E294C4 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E9320129B0C33500E294C4 /* String+.swift */; };
+		95E9320429B0C38900E294C4 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E9320329B0C38900E294C4 /* Operators.swift */; };
 		95FC7ACC29A93290005A45CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FC7ACB29A93290005A45CC /* AppDelegate.swift */; };
 		95FC7ACE29A93290005A45CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FC7ACD29A93290005A45CC /* SceneDelegate.swift */; };
 		95FC7AD529A93294005A45CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95FC7AD429A93294005A45CC /* Assets.xcassets */; };
@@ -118,6 +120,8 @@
 		95E931FB29B0BDE100E294C4 /* UIEdgeInsets+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+.swift"; sourceTree = "<group>"; };
 		95E931FD29B0BEEA00E294C4 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		95E931FF29B0C1AA00E294C4 /* TextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyle.swift; sourceTree = "<group>"; };
+		95E9320129B0C33500E294C4 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		95E9320329B0C38900E294C4 /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 		95FC7AC829A93290005A45CC /* ListUsers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListUsers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95FC7ACB29A93290005A45CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95FC7ACD29A93290005A45CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -254,6 +258,7 @@
 				95FC7B2129AE32DE005A45CC /* UIHelper.swift */,
 				95E931C929AEE34700E294C4 /* ReusableIdentifier.swift */,
 				95FC7AFD29A93636005A45CC /* Coordinator.swift */,
+				95E9320329B0C38900E294C4 /* Operators.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -282,6 +287,7 @@
 				95E931E029AFD19D00E294C4 /* ColorLuminosity.swift */,
 				95E931E629AFF88F00E294C4 /* UIApplication+.swift */,
 				95E931FB29B0BDE100E294C4 /* UIEdgeInsets+.swift */,
+				95E9320129B0C33500E294C4 /* String+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -617,6 +623,7 @@
 				95E931D129AEF69800E294C4 /* Networking.swift in Sources */,
 				95E931D829AF88DD00E294C4 /* BaseNetworkingManager.swift in Sources */,
 				95E931CF29AEEF0800E294C4 /* UIImageView+.swift in Sources */,
+				95E9320429B0C38900E294C4 /* Operators.swift in Sources */,
 				95FC7B1929AE11C6005A45CC /* ErrorType.swift in Sources */,
 				95E9320029B0C1AA00E294C4 /* TextStyle.swift in Sources */,
 				95E931CA29AEE34700E294C4 /* ReusableIdentifier.swift in Sources */,
@@ -639,6 +646,7 @@
 				95E931E729AFF88F00E294C4 /* UIApplication+.swift in Sources */,
 				95FC7B0629ACDF21005A45CC /* GetServerViewController.swift in Sources */,
 				95FC7B0E29ACFC08005A45CC /* UIViewController+.swift in Sources */,
+				95E9320229B0C33500E294C4 /* String+.swift in Sources */,
 				95FC7B0C29ACFBEB005A45CC /* Int+.swift in Sources */,
 				95FC7B1729AE11A0005A45CC /* EndpointType.swift in Sources */,
 				95FC7B0829ACE340005A45CC /* LoadableViewController.swift in Sources */,

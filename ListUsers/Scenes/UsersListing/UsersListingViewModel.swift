@@ -36,7 +36,7 @@ final class UsersListingViewModel {
 
     private func makeRows() {
         let rows = usersList.sorted().map { user -> UsersListingRowType in
-            let userData = UsersListingViewData(name: user.profile?.completeName ?? "", avatar: user.avatar ?? "")
+            let userData = UsersListingViewData(name: user.profile?.completeName ?? .empty, avatar: user.avatar ?? .empty)
             return .user(userData)
         }
 

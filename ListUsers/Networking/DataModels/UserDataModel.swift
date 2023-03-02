@@ -9,7 +9,7 @@ import Foundation
 
 struct UserDataModel: Decodable, Comparable {
     static func < (lhs: UserDataModel, rhs: UserDataModel) -> Bool {
-        return lhs.profile?.firstName ?? "" < rhs.profile?.firstName ?? ""
+        return lhs.profile?.firstName <? rhs.profile?.firstName
     }
 
     static func == (lhs: UserDataModel, rhs: UserDataModel) -> Bool {
@@ -31,7 +31,7 @@ struct Profile: Decodable {
     let staticData: [Int]?
 
     var completeName: String {
-        return "\(firstName ?? "") \(lastName ?? "")"
+        return "\(firstName ?? .empty) \(lastName ?? .empty)"
     }
 }
 

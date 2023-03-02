@@ -36,18 +36,18 @@ extension GetServerView: ViewCodeConfiguration {
     func setupConstraints() {
         titleLabel.snp.makeConstraints { make in
             make.top.equalTo(safeAreaLayoutGuide.snp.top)
-            make.horizontalEdges.equalToSuperview().inset(16)
+            make.horizontalEdges.equalToSuperview().inset(Layout.Margin.margin16)
         }
 
         textField.snp.makeConstraints { make in
-            make.top.equalTo(titleLabel.snp.bottom).offset(16)
-            make.horizontalEdges.equalToSuperview().inset(16)
+            make.top.equalTo(titleLabel.snp.bottom).offset(Layout.Margin.margin16)
+            make.horizontalEdges.equalToSuperview().inset(Layout.Margin.margin16)
         }
 
         button.snp.makeConstraints { make in
-            make.top.equalTo(textField.snp.bottom).offset(32)
-            make.horizontalEdges.equalToSuperview().inset(16)
-            make.height.equalTo(56)
+            make.top.equalTo(textField.snp.bottom).offset(Layout.Margin.margin32)
+            make.horizontalEdges.equalToSuperview().inset(Layout.Margin.margin16)
+            make.height.equalTo(Layout.Height.height52)
         }
     }
 
